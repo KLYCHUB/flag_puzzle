@@ -17,7 +17,6 @@ void main() async {
       child: const MyApp()));
 }
 
-////ar-AE.json
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});

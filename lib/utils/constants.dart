@@ -20,3 +20,6 @@ const double highScoreCardBorderRadius = 15.0;
 const double highScoreCardEdgeInsetsAll = 8.0;
 const double highScoreHorizontal = 32.0;
 const double highScoreVertical = 8;
+
+const double gameSelcetButtonHeight = 300;
+const double gameSelcetButtonWidth = 100;

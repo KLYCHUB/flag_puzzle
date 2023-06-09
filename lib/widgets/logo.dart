@@ -36,7 +36,7 @@ class Logo extends StatelessWidget {
               image: AssetImage(logoAssets),
             ),
           ),
-        )
+        ),
       ],
     );
   }

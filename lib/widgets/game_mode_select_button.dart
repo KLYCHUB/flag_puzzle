@@ -1,12 +1,11 @@
-// contanier_button.dart
 import 'package:flutter/material.dart';
 
 import '../pages/game_mode_select.dart';
 import '../thema.dart';
 import '../utils/constants.dart';
 
-class PlayButton extends StatelessWidget {
-  const PlayButton({
+class GameModSellectButton extends StatelessWidget {
+  const GameModSellectButton({
     super.key,
     required this.buttonText,
   });
@@ -25,9 +24,17 @@ class PlayButton extends StatelessWidget {
       },
       overlayColor: const MaterialStatePropertyAll(Colors.transparent),
       child: Container(
-        width: buttonWidth,
-        height: buttonHeight,
-        decoration: buttonDecoration,
+        width: gameSelcetButtonHeight,
+        height: gameSelcetButtonWidth,
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(borderRadius),
+          gradient: const LinearGradient(
+            colors: [
+              gradientColor1,
+              gradientColor2,
+            ],
+          ),
+        ),
         child: Center(
           child: Text(
             buttonText,

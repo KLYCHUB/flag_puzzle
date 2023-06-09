@@ -6,5 +6,10 @@
     "play":"PLAY",
     "score30":"30 Questions High Score",
     "score60":"60 Questions High Score",
-    "score120":"Questions High Score"
+    "score120":"120 Questions High Score",
+    "questions30":"30 Questions",
+    "questions60":"60 Questions",
+    "questions120":"120 Questions",
+    "game_mode_select":"GAME MODE SELECT"
+
 }

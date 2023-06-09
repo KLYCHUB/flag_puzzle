@@ -1,18 +1,12 @@
 import 'package:easy_localization/easy_localization.dart';
-import 'package:flag_puzzle/thema.dart';
 import 'package:flutter/material.dart';
 
-import '../widgets/high_score_card.dart';
+import '../thema.dart';
+import '../widgets/game_mode_select_button.dart';
 
-class HighScoreScreen extends StatefulWidget {
-  const HighScoreScreen({Key? key}) : super(key: key);
+class GameModeScreen extends StatelessWidget {
+  const GameModeScreen({super.key});
 
-  @override
-  // ignore: library_private_types_in_public_api
-  _HighScoreScreenState createState() => _HighScoreScreenState();
-}
-
-class _HighScoreScreenState extends State<HighScoreScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -42,7 +36,7 @@ class _HighScoreScreenState extends State<HighScoreScreen> {
             colors: [gradientColor1, gradientColor2],
           ).createShader(bounds),
           child: Text(
-            'high_score'.tr(),
+            'game_mode_select'.tr(),
             style: Theme.of(context).textTheme.titleLarge?.copyWith(
                   color: Colors.white,
                   fontWeight: FontWeight.w900,
@@ -55,18 +49,16 @@ class _HighScoreScreenState extends State<HighScoreScreen> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            HighScoreCard(
-              soruSayiyi: 'score30'.tr(),
-              score: '150',
-            ),
-            HighScoreCard(
-              soruSayiyi: 'score60'.tr(),
-              score: '300',
-            ),
-            HighScoreCard(
-              soruSayiyi: 'score120'.tr(),
-              score: '600',
-            ),
+            const Spacer(flex: 2),
+            Expanded(
+                child: GameModSellectButton(buttonText: 'questions30'.tr())),
+            const Spacer(flex: 1),
+            Expanded(
+                child: GameModSellectButton(buttonText: 'questions60'.tr())),
+            const Spacer(flex: 1),
+            Expanded(
+                child: GameModSellectButton(buttonText: 'questions120'.tr())),
+            const Spacer(flex: 2),
           ],
         ),
       ),

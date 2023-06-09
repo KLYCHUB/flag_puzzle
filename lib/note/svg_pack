@@ -1,0 +1,13 @@
+final  String turkeyFlag = 'assets/images/Turkiye.svg';
+
+SizedBox(
+  width: logoWidth,
+  height: logoHeight,
+  child: Padding(
+    padding: EdgeInsets.all(paddingEdgeInsetsAll),
+    child: SvgPicture.asset(
+      turkeyFlag,
+      semanticsLabel: 'Türkiye Bayrağı'
+    ),
+  ),
+)

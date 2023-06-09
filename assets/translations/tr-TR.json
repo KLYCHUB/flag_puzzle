@@ -6,6 +6,10 @@
     "play":"OYNA",
     "score30":"30 Soruluk Yüksek Puan",
     "score60":"60 Soruluk Yüksek Puan",
-    "score120":"120 Soruluk Yüksek Puan"
+    "score120":"120 Soruluk Yüksek Puan",
+    "questions30":"30 Soru",
+    "questions60":"60 Soru",
+    "questions120":"120 Soru",
+    "game_mode_select":"OYUN MODUNU SEÇ"
 }
 

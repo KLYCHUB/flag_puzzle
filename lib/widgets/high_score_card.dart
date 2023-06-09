@@ -22,6 +22,7 @@ class HighScoreCard extends StatelessWidget {
         vertical: highScoreVertical,
       ),
       child: Card(
+        color: Colors.transparent,
         child: Container(
           // Container için bir BoxDecoration tanımlayalım
           decoration: BoxDecoration(

@@ -1,6 +1,6 @@
+import 'package:flag_puzzle/pages/game_screen.dart';
 import 'package:flutter/material.dart';
 
-import '../pages/game_mode_select.dart';
 import '../thema.dart';
 import '../utils/constants.dart';
 
@@ -18,7 +18,7 @@ class GameModSellectButton extends StatelessWidget {
       onTap: () {
         Navigator.push(context, MaterialPageRoute(
           builder: (context) {
-            return const GameModeScreen();
+            return const GameScreen();
           },
         ));
       },

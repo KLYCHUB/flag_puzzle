@@ -8,10 +8,7 @@ import '../utils/constants.dart';
 class LangueButton extends StatelessWidget {
   const LangueButton({
     super.key,
-    required this.buttonText,
   });
-
-  final String buttonText;
 
   @override
   Widget build(BuildContext context) {
@@ -21,18 +18,10 @@ class LangueButton extends StatelessWidget {
       },
       overlayColor: const MaterialStatePropertyAll(Colors.transparent),
       child: Container(
-        width: buttonWidth,
+        width: buttonWidth / 3,
         height: buttonHeight,
         decoration: buttonDecoration,
-        child: Center(
-          child: Text(
-            buttonText,
-            style: Theme.of(context).textTheme.titleMedium?.copyWith(
-                  fontWeight: FontWeight.w900,
-                  letterSpacing: 2,
-                ),
-          ),
-        ),
+        child: const Center(child: Icon(Icons.translate)),
       ),
     );
   }
